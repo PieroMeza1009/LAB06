@@ -32,4 +32,11 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
     public E dequeue() throws ExceptionIsEmpty {
         for (int i = prioridades - 1; i >= 0; i--) {
 
+            if (!colas[i].isEmpty()) {
+                return colas[i].dequeue();
+            }
+        }
+        throw new ExceptionIsEmpty("Todas las colas están vacías");
+    }
+
 }

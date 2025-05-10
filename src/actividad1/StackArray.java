@@ -5,7 +5,7 @@ import actividad1.StackArray;
 import actividad1.ExceptionIsEmpty;
 
 
-public class StackArray  implements Stack<E> {
+public class StackArray<E>  implements Stack<E> {
     private E[] array;
     private int tope;
 

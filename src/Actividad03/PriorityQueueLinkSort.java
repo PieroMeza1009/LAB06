@@ -6,6 +6,10 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
     class EntryNode {
         E data;
         N priority;
+        EntryNode(E data, N priority) {
+            this.data = data;
+            this.priority = priority;
+        }
     
     }
 

@@ -13,4 +13,9 @@ public class TestPriorityQueueLinked {
         pq.enqueue("Tarea crítica", 4);
         pq.enqueue("Tarea sin apuro", 0);
 
+        System.out.println("Contenido de la cola de prioridad:");
+        System.out.println(pq);
+
+        try {
+
 }

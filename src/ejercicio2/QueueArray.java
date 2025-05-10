@@ -29,6 +29,9 @@ public class QueueArray<E> implements Queue<E> {
         size++;
     }
 
+    public E dequeue() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("Cola vacía");
+
 
 
 }

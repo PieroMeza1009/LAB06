@@ -15,6 +15,10 @@ public class TestQueueArray {
         System.out.println(cola);
 
         try {
+            System.out.println("Frente: " + cola.front());
+            System.out.println("Último: " + cola.back());
+            System.out.println("Desencolado: " + cola.dequeue());
+            System.out.println("Nuevo frente: " + cola.front());
 
 
 

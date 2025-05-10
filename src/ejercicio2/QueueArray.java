@@ -43,6 +43,16 @@ public class QueueArray<E> implements Queue<E> {
         return array[first];
     }
 
+    public E back() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("Cola vacía");
+        int index = (last - 1 + max) % max;
+        return array[index];
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
 
 
 

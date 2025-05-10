@@ -1,5 +1,7 @@
 package Actividad2;
 
+import actividad1.ExceptionIsEmpty;
+
 public class QueueLink<E> implements Queue<E> {
     private Node<E> first;
     private Node<E> last;
@@ -17,5 +19,11 @@ public class QueueLink<E> implements Queue<E> {
         }
         this.last = aux;
     }
+
+    public E dequeue() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("Queue is empty");
+        E data = first.getData();
+        first = first.getNext();
+
 
 }

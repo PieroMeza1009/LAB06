@@ -11,5 +11,11 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
     private int prioridades;
 
     public PriorityQueueLinked(int prioridades) {
+        this.prioridades = prioridades;
+        this.colas = new Queue[prioridades];
+
+        for (int i = 0; i < prioridades; i++) {
+            colas[i] = new QueueLink<>();
+        }
 
 }

@@ -5,5 +5,8 @@ import actividad1.ExceptionIsEmpty;
 
 public class StackLink <E> implements Stack<E> {
     private Node<E> top;
+    public StackLink() {
+        this.top = null;
+    }
 
 }

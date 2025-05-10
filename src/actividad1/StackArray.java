@@ -29,7 +29,11 @@ public class StackArray  implements Stack<E> {
     if (isEmpty()) throw new ExceptionIsEmpty("Stack is empty");
         return array[tope];
     }
-    
+
+    public boolean isEmpty() {
+        return tope == -1;
+    }
+
     
 }
 

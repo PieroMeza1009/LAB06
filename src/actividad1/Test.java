@@ -14,6 +14,9 @@ public class Test {
             System.out.println("Tope: " + pilaEnteros.top());
             System.out.println("Desapilado: " + pilaEnteros.pop());
             System.out.println("Nuevo tope: " + pilaEnteros.top());
+        } catch (ExceptionIsEmpty e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }

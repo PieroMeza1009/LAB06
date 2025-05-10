@@ -8,5 +8,8 @@ public class QueueLink<E> implements Queue<E> {
         this.first = null;
         this.last = null;
     }
+    public void enqueue(E x) {
+        Node<E> aux = new Node<>(x);
+    }
 
 }

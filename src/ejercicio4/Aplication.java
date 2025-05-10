@@ -22,6 +22,12 @@ public class Aplication {
                 } catch (ExceptionIsEmpty e) {
                     return false;
                 }
+            }
+        }
+
+        return pila.isEmpty(); // debe estar vacía si todo fue cerrado correctamente
+    }
+
 
 
 }

@@ -6,5 +6,7 @@ import actividad1.ExceptionIsEmpty;
 
 
 public class Aplication {
+    public static boolean symbolBalancing(String s) {
+        Stack<Character> pila = new StackLink<>();
 
 }

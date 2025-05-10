@@ -32,6 +32,12 @@ public class QueueArray<E> implements Queue<E> {
     public E dequeue() throws ExceptionIsEmpty {
         if (isEmpty()) throw new ExceptionIsEmpty("Cola vacía");
 
+        E x = array[first];
+        first = (first + 1) % max;
+        size--;
+        return x;
+    }
+
 
 
 }

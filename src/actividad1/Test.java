@@ -17,6 +17,13 @@ public class Test {
         } catch (ExceptionIsEmpty e) {
             System.out.println(e.getMessage());
         }
+
+        Stack<String> pilaCadenas = new StackArray<>(3);
+        pilaCadenas.push("Hola");
+        pilaCadenas.push("Mundo");
+        System.out.println("\nPila de cadenas:");
+        System.out.println(pilaCadenas);
+
     }
 
 }

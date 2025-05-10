@@ -71,5 +71,19 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
         return last.getData().data;
     }
 
+    public boolean isEmpty() {
+        return first == null;
+    }
+
+    public String toString() {
+        String resultado = "";
+        Node<EntryNode> aux = first;
+        while (aux != null) {
+            resultado += aux.getData() + " -> ";
+            aux = aux.getNext();
+        }
+        return resultado + "null";
+    }
+
 
 }

@@ -24,6 +24,10 @@ public class Test {
         System.out.println("\nPila de cadenas:");
         System.out.println(pilaCadenas);
 
+        try {
+            System.out.println("Tope: " + pilaCadenas.top());
+            System.out.println("Desapilado: " + pilaCadenas.pop());
+
     }
 
 }

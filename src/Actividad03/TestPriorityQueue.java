@@ -20,6 +20,13 @@ public class TestPriorityQueue {
         try {
             System.out.println("Elemento con mayor prioridad (front): " + cola.front());
             System.out.println("Elemento con menor prioridad (back): " + cola.back());
+
+            System.out.println("Eliminando elemento de mayor prioridad: " + cola.dequeue());
+            System.out.println("Nueva cola:");
+            System.out.println(cola);
+        } catch (ExceptionIsEmpty e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }

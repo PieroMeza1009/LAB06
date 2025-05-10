@@ -10,6 +10,9 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
             this.data = data;
             this.priority = priority;
         }
+        public String toString() {
+            return data + " (" + priority + ")";
+        }
     
     }
 

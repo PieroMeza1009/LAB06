@@ -49,5 +49,9 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
                 last = nuevoNodo;
             }
         }
+    }
+    public E dequeue() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("Priority queue is empty");
+
 
 }

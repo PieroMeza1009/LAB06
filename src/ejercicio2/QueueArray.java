@@ -55,9 +55,14 @@ public class QueueArray<E> implements Queue<E> {
     public boolean isFull() {
         return size == max;
     }
-
-
-
+    public String toString() {
+        String result = "";
+        for (int i = 0; i < size; i++) {
+            int index = (first + i) % max;
+            result += array[index] + " -> ";
+        }
+        return result + "null";
+    }
 
 
 }

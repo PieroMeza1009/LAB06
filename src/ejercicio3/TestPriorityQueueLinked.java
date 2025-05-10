@@ -23,5 +23,9 @@ public class TestPriorityQueueLinked {
 
             System.out.println("\nCola actual:");
             System.out.println(pq);
+        } catch (ExceptionIsEmpty e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 }

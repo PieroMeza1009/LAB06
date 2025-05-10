@@ -58,6 +58,16 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
         }
         throw new ExceptionIsEmpty("Todas las colas están vacías");
     }
+    
+    @Override
+    public boolean isEmpty() {
+        for (int i = 0; i < prioridades; i++) {
+            if (!colas[i].isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 }

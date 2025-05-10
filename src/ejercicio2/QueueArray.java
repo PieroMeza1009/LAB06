@@ -23,6 +23,11 @@ public class QueueArray<E> implements Queue<E> {
         if (isFull()) {
             System.out.println("La cola está llena");
             return;
+        }
+        array[last] = x;
+        last = (last + 1) % max;
+        size++;
+    }
 
 
 

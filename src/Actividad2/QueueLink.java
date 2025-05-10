@@ -42,6 +42,13 @@ public class QueueLink<E> implements Queue<E> {
     }
 
     public String toString() {
-
+        String result = "";
+        Node<E> aux = first;
+        while (aux != null) {
+            result += aux.getData() + " -> ";
+            aux = aux.getNext();
+        }
+        return result + "null";
+    }
 
 }

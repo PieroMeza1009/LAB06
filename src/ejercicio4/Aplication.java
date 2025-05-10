@@ -16,6 +16,12 @@ public class Aplication {
                 pila.push(c);
             } else if (c == ')' || c == ']' || c == '}') {
                 if (pila.isEmpty()) return false;
+                try {
+                    char top = pila.pop();
+                    if (!esPar(top, c)) return false;
+                } catch (ExceptionIsEmpty e) {
+                    return false;
+                }
 
 
 }

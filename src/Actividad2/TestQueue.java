@@ -1,5 +1,7 @@
 package Actividad2;
 
+import actividad1.ExceptionIsEmpty;
+
 public class TestQueue {
     public static void main(String[] args) {
         Queue<String> cola = new QueueLink<>();
@@ -16,5 +18,9 @@ public class TestQueue {
             System.out.println("Último: " + cola.back());
             System.out.println("Elemento desencolado: " + cola.dequeue());
             System.out.println("Nueva cola: " + cola);
+        } catch (ExceptionIsEmpty e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 }

@@ -17,5 +17,13 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
         for (int i = 0; i < prioridades; i++) {
             colas[i] = new QueueLink<>();
         }
+    }
+
+    @Override
+    public void enqueue(E x, Integer pr) {
+        if (pr < 0 || pr >= prioridades) {
+            System.out.println("Prioridad inválida: " + pr);
+            return;
+        }
 
 }

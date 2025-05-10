@@ -28,6 +28,10 @@ public class Aplication {
         return pila.isEmpty(); // debe estar vacía si todo fue cerrado correctamente
     }
 
-
+    private static boolean esPar(char apertura, char cierre) {
+        return (apertura == '(' && cierre == ')') ||
+               (apertura == '[' && cierre == ']') ||
+               (apertura == '{' && cierre == '}');
+    }
 
 }

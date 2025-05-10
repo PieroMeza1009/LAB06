@@ -27,9 +27,10 @@ public class Test {
         try {
             System.out.println("Tope: " + pilaCadenas.top());
             System.out.println("Desapilado: " + pilaCadenas.pop());
-            
+
         } catch (ExceptionIsEmpty e) {
             System.out.println(e.getMessage());
+        }
 
     }
 

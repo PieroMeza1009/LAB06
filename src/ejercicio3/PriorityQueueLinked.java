@@ -25,5 +25,11 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
             System.out.println("Prioridad inválida: " + pr);
             return;
         }
+        colas[pr].enqueue(x);
+    }
+
+    @Override
+    public E dequeue() throws ExceptionIsEmpty {
+        for (int i = prioridades - 1; i >= 0; i--) {
 
 }

@@ -5,7 +5,7 @@ import Actividad2.Queue;
 import actividad1.ExceptionIsEmpty;
 
 public class TestQueueArray {
-        Queue<String> cola = new QueueArray<>(5);
+        Queue<String> cola = new QueueArray<>(5);{
 
         cola.enqueue("Uno");
         cola.enqueue("Dos");
@@ -23,7 +23,9 @@ public class TestQueueArray {
             System.out.println(e.getMessage());
         }
 
-
+        System.out.println("Estado final de la cola:");
+        System.out.println(cola);
+    }
 
 
 }

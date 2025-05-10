@@ -10,5 +10,11 @@ public class QueueArray<E> implements Queue<E> {
     private int size;
     private int max;
 
+    public QueueArray(int capacidad) {
+        this.array = (E[]) new Object[capacidad];
+        this.max = capacidad;
+
+    }
+
 
 }

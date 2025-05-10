@@ -49,4 +49,15 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
         throw new ExceptionIsEmpty("Todas las colas están vacías");
     }
 
+    @Override
+    public E back() throws ExceptionIsEmpty {
+        for (int i = 0; i < prioridades; i++) {
+            if (!colas[i].isEmpty()) {
+                return colas[i].back();
+            }
+        }
+        throw new ExceptionIsEmpty("Todas las colas están vacías");
+    }
+
+
 }

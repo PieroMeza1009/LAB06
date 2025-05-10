@@ -12,5 +12,9 @@ public class TestQueue {
         System.out.println(cola);
 
         try {
+            System.out.println("Frente: " + cola.front());
+            System.out.println("Último: " + cola.back());
+            System.out.println("Elemento desencolado: " + cola.dequeue());
+            System.out.println("Nueva cola: " + cola);
 
 }

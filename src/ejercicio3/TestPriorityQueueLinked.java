@@ -17,5 +17,11 @@ public class TestPriorityQueueLinked {
         System.out.println(pq);
 
         try {
+            System.out.println("Elemento con mayor prioridad (front): " + pq.front());
+            System.out.println("Elemento con menor prioridad (back): " + pq.back());
+            System.out.println("Eliminando el de mayor prioridad: " + pq.dequeue());
+
+            System.out.println("\nCola actual:");
+            System.out.println(pq);
 
 }

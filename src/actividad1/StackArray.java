@@ -1,5 +1,9 @@
 package actividad1;
 
+import actividad1.Stack;
+import actividad1.StackArray;
+import actividad1.ExceptionIsEmpty;
+
 
 public class StackArray  implements Stack<E> {
     private E[] array;

@@ -52,6 +52,10 @@ public class QueueArray<E> implements Queue<E> {
     public boolean isEmpty() {
         return size == 0;
     }
+    public boolean isFull() {
+        return size == max;
+    }
+
 
 
 

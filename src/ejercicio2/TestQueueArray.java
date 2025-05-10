@@ -19,6 +19,10 @@ public class TestQueueArray {
             System.out.println("Último: " + cola.back());
             System.out.println("Desencolado: " + cola.dequeue());
             System.out.println("Nuevo frente: " + cola.front());
+        } catch (ExceptionIsEmpty e) {
+            System.out.println(e.getMessage());
+        }
+
 
 
 

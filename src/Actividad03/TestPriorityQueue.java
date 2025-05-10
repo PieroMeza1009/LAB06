@@ -16,6 +16,10 @@ public class TestPriorityQueue {
 
         System.out.println("Contenido de la cola de prioridad:");
         System.out.println(cola);
+
+        try {
+            System.out.println("Elemento con mayor prioridad (front): " + cola.front());
+            System.out.println("Elemento con menor prioridad (back): " + cola.back());
     }
 
 }

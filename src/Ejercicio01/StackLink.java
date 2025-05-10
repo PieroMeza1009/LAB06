@@ -9,4 +9,10 @@ public class StackLink <E> implements Stack<E> {
         this.top = null;
     }
 
+    public void push(E x) {
+        Node<E> nuevo = new Node<>(x);
+        nuevo.setNext(top);
+        top = nuevo;
+    }
+
 }

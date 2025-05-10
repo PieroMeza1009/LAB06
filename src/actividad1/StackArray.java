@@ -33,7 +33,10 @@ public class StackArray  implements Stack<E> {
     public boolean isEmpty() {
         return tope == -1;
     }
-
+    
+    public boolean isFull() {
+        return tope == array.length - 1;
+    }
     
 }
 

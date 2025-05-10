@@ -14,4 +14,7 @@ public class TestStackLink {
         pila.push("Tres");
     }
 
+        System.out.println("Contenido de la pila:");
+        System.out.println(pila);
+
 }

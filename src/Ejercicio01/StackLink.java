@@ -18,4 +18,7 @@ public class StackLink <E> implements Stack<E> {
     public E pop() throws ExceptionIsEmpty {
         if (isEmpty()) throw new ExceptionIsEmpty("Stack is empty");
         E valor = top.getData();
+        top = top.getNext();
+        return valor;
+    }
 }

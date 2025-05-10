@@ -9,4 +9,8 @@ public class Aplication {
     public static boolean symbolBalancing(String s) {
         Stack<Character> pila = new StackLink<>();
 
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+
 }

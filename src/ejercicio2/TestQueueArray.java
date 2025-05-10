@@ -11,6 +11,11 @@ public class TestQueueArray {
         cola.enqueue("Dos");
         cola.enqueue("Tres");
 
+        System.out.println("Contenido de la cola:");
+        System.out.println(cola);
+
+        try {
+
 
 
 }

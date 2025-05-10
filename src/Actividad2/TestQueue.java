@@ -8,4 +8,9 @@ public class TestQueue {
         cola.enqueue("B");
         cola.enqueue("C");
 
+        System.out.println("Contenido de la cola:");
+        System.out.println(cola);
+
+        try {
+
 }

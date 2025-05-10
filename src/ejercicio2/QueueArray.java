@@ -19,6 +19,11 @@ public class QueueArray<E> implements Queue<E> {
         this.size = 0;
     }
 
+    public void enqueue(E x) {
+        if (isFull()) {
+            System.out.println("La cola está llena");
+            return;
+
 
 
 }

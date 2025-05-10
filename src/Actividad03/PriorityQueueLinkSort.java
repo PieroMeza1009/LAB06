@@ -66,5 +66,10 @@ public class PriorityQueueLinkSort<E, N extends Comparable<N>> implements Priori
         return first.getData().data;
     }
 
+    public E back() throws ExceptionIsEmpty {
+        if (isEmpty()) throw new ExceptionIsEmpty("Priority queue is empty");
+        return last.getData().data;
+    }
+
 
 }

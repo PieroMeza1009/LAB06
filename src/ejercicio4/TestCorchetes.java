@@ -10,5 +10,12 @@ public class TestCorchetes {
             "[",
             "[][][]{{{}}}"
         };
+    
+
+        for (String cadena : pruebas) {
+            boolean resultado = Aplication.symbolBalancing(cadena);
+            System.out.println("Cadena: " + cadena + " → ¿Balanceada? " + resultado);
+        }
+    }
 
 }

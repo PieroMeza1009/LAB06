@@ -30,4 +30,14 @@ public class StackLink<E> implements Stack<E> {
     public boolean isEmpty() {
         return top == null;
     }
+
+    public String toString() {
+        String resultado = "";
+        Node<E> aux = top;
+        while (aux != null) {
+            resultado += aux.getData() + "\n";
+            aux = aux.getNext();
+        }
+        return resultado;
+    }
 }

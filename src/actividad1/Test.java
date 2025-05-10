@@ -9,6 +9,11 @@ public class Test {
         pilaEnteros.push(30);
         System.out.println("Pila de enteros:");
         System.out.println(pilaEnteros);
+
+        try {
+            System.out.println("Tope: " + pilaEnteros.top());
+            System.out.println("Desapilado: " + pilaEnteros.pop());
+            System.out.println("Nuevo tope: " + pilaEnteros.top());
     }
 
 }

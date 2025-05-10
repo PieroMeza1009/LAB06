@@ -58,7 +58,7 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
         }
         throw new ExceptionIsEmpty("Todas las colas están vacías");
     }
-    
+
     @Override
     public boolean isEmpty() {
         for (int i = 0; i < prioridades; i++) {
@@ -68,6 +68,12 @@ public class PriorityQueueLinked <E> implements PriorityQueue<E, Integer> {
         }
         return true;
     }
-
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = prioridades - 1; i >= 0; i--) {
+            sb.append("Prioridad ").append(i).append(": ").append(colas[i]).append("\n");
+        }
+        return sb.toString();
+    }
 
 }

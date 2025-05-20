@@ -26,15 +26,19 @@ public class StackLink<E> implements Stack<E> {
         return valor;
     }
 
+    //metodo para ver el valor del tope sin eliminarlo (top o peek)
+
     public E top() throws ExceptionIsEmpty {
         if (isEmpty()) throw new ExceptionIsEmpty("Stack is empty");
         return top.getData();
     }
 
+    //verifica si la pila está vacía
     public boolean isEmpty() {
         return top == null;
     }
 
+    //este es el metodo para representar la pila como una cadena (de arriba hacia abajo)
     public String toString() {
         String resultado = "";
         Node<E> aux = top;
